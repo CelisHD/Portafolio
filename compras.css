@@ -1,0 +1,240 @@
+
+   /* Reset de estilos */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#close{
+    margin-left: auto;
+}
+
+#close a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #cc3333; /* Rojo no intenso */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+#close a:hover {
+    background-color: #e97a7a; /* Cambio de color al pasar el cursor */
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.container {
+    display: ruby-text;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 26%;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: 235px;
+}
+
+.product:hover {
+    background-color: #ffcc00;; /* Cambia el color de fondo al pasar el mouse sobre el producto */
+}
+
+.product button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: background-color 0.3s ease; /* Transición suave para cambiar el color de fondo */
+}
+
+.product button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+@media only screen and (max-width: 767px) {
+    .product img {
+        max-height: 200px; /* Altura máxima de la imagen en dispositivos móviles */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product img {
+        max-height: 160px; /* Altura máxima de la imagen en dispositivos móviles */
+    }
+}
+
+/*Footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+}
+
+.footer .container {
+    text-align: center;
+    padding: 1px;
+}
+
+.footer-content {
+    display: ruby-text;
+}
+
+.footer-section {
+    width: 30%;
+    margin-bottom: 2px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 8px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: ui-monospace;
+    /* text-stroke: 0.2px #ffcc00; /* Grosor y color del borde del texto */
+    /* -webkit-text-stroke: 0.2px #ffcc00; */ 
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #ffdd33;
+}
+
+/* Estilos para el carrito de compras */
+#cart {
+    display: flex;
+    align-items: center;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 6px;
+    width: 45px;
+}
+
+#cart img {
+    margin-right: 10px;
+    height: 25px; /* Ajusta el tamaño de la imagen del carrito según sea necesario */
+}
+
+#cart-count {
+    font-weight: bold;
+    font-size: 18px;
+}

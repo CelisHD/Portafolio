@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/moto4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33.33% - 20px);
+}
+
+.product img {
+    max-width: 100%;
+}
+
+#cart {
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    right: 20px;
+}
+
+.estilo_caja{
+	background: rgba(199, 205, 205, 0.329);
+	width: 500px;
+	height: 350px;
+
+	box-shadow: 3px 3px 3px #000;
+	margin:30px;
+	padding: 30px;
+	border-radius: 18px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.s{
+	color: #ffdd33;
+	text-shadow: 1px 1px 1px #000;
+	font-family: Calibri;
+    font-size: 22px;
+    font-weight: 600
+}
+
+.estilo_titulo{
+	color: #ffdd33;
+	text-shadow: 1px 1px 1px #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	margin: 20px;
+}
+
+.ingreso{
+    background-attachment: fixed;
+    border-radius: 5px;
+    margin: 20px;
+    border-color: white;
+    
+}
+
+.estilo_boton{
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+.estilo_boton:active{
+    background-color: rgba(32, 117, 235, 0.566);
+}
+.estilo_boton:hover{
+    background-color: rgba(32, 117, 235, 0.566);
+}
+
+.estilo_link{
+    display: inline-block;
+    background-color: #007bff; 
+    color: black; 
+    padding: 7px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    font-size: 14px;
+    width: 88px;
+    height: 18px;
+    text-align: center;
+}

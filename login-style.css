@@ -1,0 +1,71 @@
+body{
+            background-image: url(../img/Yamaha.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form{
+            flex-direction: column;
+            position: center;
+            gap: 10px;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-bottom: 0.4em;
+            border-radius: 25px;
+            transition: .4s ease-in-out;
+            background-color: #978e8eaf;
+        }
+        .form.hover{
+            transform: scale(1.05);
+            border: 1px solid rgb(0, 0, 0);
+        }
+        #heading{
+            text-align: center;
+            margin: 2em;
+            color: rgb(12, 11, 11);
+            font-size: 2.5em;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .field{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+            border-radius: 25px;
+            padding: 0.6em;
+            border:none;
+            outline: none;
+            color:rgb(20, 20, 20);
+            background-color: #f8f6f6;
+            box-shadow: inset 2px 5px 10px rgb(19, 18, 18);
+            width: 40em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .input-field {
+            background: none;
+            border: none;
+            outline: none;
+            width: 100%;
+            color: #000000;
+        }
+        .my-button {
+            padding: 10px 20px;
+            background-color: #080808;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .my-button:hover {
+            background-color: #0516b1;
+        }
+        .my-button:active {
+            background-color: #0e0ca3;
+        }
+        .olvidado{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            color:#000000;
+        }

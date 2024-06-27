@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+
+    <link rel="stylesheet" href="css/login-style.css">
+</head>
+<body>
+    <form class="form" action="php/login.php" method="post">
+        <p id="heading">Login</p>
+        <div class="field">
+            <span>Correo</span>
+            <input autocomplete="off" placeholder="Username" class="input-field" type="email" id="correo" name="correo" required/>
+        </div>
+        <div class="field">
+            <span>Contrasena</span>
+            <input placeholder="Password" class="input-field" type="password" id="contrasena" name="contrasena" required/>
+        </div>
+        <br>
+        <div>
+            <center><button class="my-button" type="submit" value="Iniciar sesión">INICIAR SESION</button></center>
+        </div>
+        <br>
+        <div>
+            <center><a href="" class="olvidado">¿Has olvidado tu contraseña?</button></center>
+            <center><a style="display: inline; font-family:'Times New Roman', Times, serif; text-decoration: none; font-size: large;">¿No tienes cuenta?</a> &nbsp; <a href="registro.html" style="color: #000000;">Registrate</a></center>
+        </div>
+    </form>
+
+    <!-- <script src="javascript/script.js"></script> -->
+    <script>
+        // Función para obtener los parámetros de la URL
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Verificar si el parámetro "registro_exitoso" está presente en la URL
+        var registroExitoso = getUrlParameter('registro_exitoso');
+        if (registroExitoso === 'true') {
+            // Mostrar un mensaje de alerta si el registro fue exitoso
+            alert('¡Registro Exitoso!');
+        }
+    </script>
+</body>
+</html>

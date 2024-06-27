@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="css/compras.css">
+</head>
+<body>
+     
+    <?php
+    session_start();
+
+    if (!isset($_SESSION['correo'])) {
+        header("Location: login.html");
+        exit;
+    }
+    ?>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="img/moto.jpg" alt="Logo de la Tienda">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#repuestos">Repuestos</a></li>
+                <li><a href="#motos">Motos</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-container">
+                <form action="#" method="GET" class="search-form">
+                    <input type="text" name="search" class="search-box" placeholder="Buscar...">
+                    <button type="submit" class="search-button">Buscar</button>
+                </form>
+            </div>
+            <div class="user-actions">
+                <div id="cart">
+                    <img src="img/carrito.jpg" alt="Carrito de Compras">
+                    <span id="cart-count">0</span>
+                </div>
+                <div id="close">
+                    <a class="estilo_link" href="login.html">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Contenido de la página de compras -->
+    <header>
+        <h1>Full Power S.A</h1>
+    </header>
+    
+    <div class="container" id="product-list">
+        <!-- Aquí se cargarán los productos dinámicamente -->
+    </div>
+
+    <footer class="footer">
+       
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Full Power</h2>
+                    <p>Full Power is your one-stop destination for premium motorcycles. We offer a wide range of motorcycles from top brands to fulfill your riding dreams.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: info@fullpower.com</p>
+                    <p>Phone: 22-6408767</p>
+                    <p>Address: Merced 21, Santiago, Chile</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+        <div class="footer-bottom">
+            &copy; 2024 Full Power | Designed by Your Company
+        </div>
+    </footer>
+    
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
